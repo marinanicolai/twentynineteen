@@ -737,11 +737,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #bfdcea;
+  background-color: #bfdfbf;
 }
 
 ::selection {
-  background-color: #bfdcea;
+  background-color: #bfdfbf;
 }
 
 *,
@@ -877,7 +877,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   transition: background 150ms ease-in-out;
-  background: #0073aa;
+  background: green;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
@@ -2372,7 +2372,7 @@ body.page .main-navigation {
 }
 
 .sticky-post {
-  background: #0073aa;
+  background: green;
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -3275,6 +3275,52 @@ body.page .main-navigation {
   margin-left: 1rem;
 }
 
+/*--------------------------------------------------------------
+## Recipe page
+--------------------------------------------------------------*/
+.recipe-features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 0.05em solid grey;
+  border-bottom: 0.05em dashed grey;
+}
+
+.recipe-features ul {
+  width: 10em;
+  float: left;
+}
+
+.recipe-features li {
+  list-style-type: none;
+  display: inline;
+}
+
+.recipe-features img {
+  max-width: 50px;
+}
+
+.recipe-features span {
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.recipe-features span#features {
+  float: right;
+}
+
+.recipe-features .first {
+  width: 50%;
+  line-height: 1em;
+}
+
+.recipe-features .second {
+  width: 20%;
+}
+
 /* Widgets */
 .widget {
   margin: 0 0 1rem;
@@ -3596,7 +3642,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
-  background-color: #0073aa;
+  background-color: green;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-text-color) {
@@ -3637,7 +3683,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active:not(.has-text-color) {
-  color: #0073aa;
+  color: green;
   border-color: currentColor;
 }
 
@@ -4131,7 +4177,7 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   border-radius: 5px;
-  background: #0073aa;
+  background: green;
   font-size: 22px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.2;

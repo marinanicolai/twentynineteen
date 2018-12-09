@@ -51,8 +51,30 @@
 			)
 		);
 		?>
+
+	<p><?php the_field('recipe_instructions'); ?></p>
+
+
+	<!-- end of recepy feature -->
+<div class="recipe-features">
+	<div class="first">
+<span id="features"> features:</span>
+<ul>
+   <li><img src="<?php bloginfo('template_directory'); ?>/img/grain.svg"></li>
+	 <li><img src="<?php bloginfo('template_directory'); ?>/img/chili.svg"></li>
+	 <li><img src="<?php bloginfo('template_directory'); ?>/img/salad-1.svg"></li> 
+
+</ul>
+	</div>
+<div class="second">
+<span>cuisine:</span>
+<img src="<?php bloginfo('template_directory'); ?>/img/france.svg">
+	</div>
+</div>
+
+
 	</div><!-- .entry-content -->
-<h1> this is the content.php </h1>
+
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

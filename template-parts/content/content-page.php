@@ -31,6 +31,8 @@
 		?>
 	</div><!-- .entry-content -->
 
+	<h1> this is a content-page.php page </h1>
+
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

@@ -3281,6 +3281,52 @@ body.page .main-navigation {
   margin-right: 1rem;
 }
 
+/*--------------------------------------------------------------
+## Recipe page
+--------------------------------------------------------------*/
+.recipe-features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 0.05em solid grey;
+  border-bottom: 0.05em dashed grey;
+}
+
+.recipe-features ul {
+  width: 10em;
+  float: right;
+}
+
+.recipe-features li {
+  list-style-type: none;
+  display: inline;
+}
+
+.recipe-features img {
+  max-width: 50px;
+}
+
+.recipe-features span {
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.recipe-features span#features {
+  float: left;
+}
+
+.recipe-features .first {
+  width: 50%;
+  line-height: 1em;
+}
+
+.recipe-features .second {
+  width: 20%;
+}
+
 /* Widgets */
 .widget {
   margin: 0 0 1rem;

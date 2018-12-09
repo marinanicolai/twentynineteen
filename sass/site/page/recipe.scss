@@ -1,0 +1,35 @@
+.recipe-features {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-top: 0.05em solid grey;
+	border-bottom: 0.05em dashed grey;
+	ul {
+		width: 10em;
+		float: right;
+	}
+	li {
+		list-style-type: none;
+		display: inline;
+	}
+	img {
+		max-width: 50px;
+	}
+	span {
+		text-transform: uppercase;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		padding-top: 2rem;
+	}
+	span#features {
+		float: left;
+	}
+	.first {
+		width: 50%;
+		line-height: 1em;
+	}
+	.second {
+		width: 20%;
+	}
+}
