@@ -55,7 +55,7 @@
 	<p><?php the_field('recipe_instructions'); ?></p>
 
 
-	<!-- end of recepy feature -->
+	
 <div class="recipe-features">
 	<div class="first">
 <span id="features"> features:</span>
@@ -70,7 +70,49 @@
 <span>cuisine:</span>
 <img src="<?php bloginfo('template_directory'); ?>/img/france.svg">
 	</div>
+</div><!-- end of recepy feature -->
+
+<!--time of the recepy-->
+<div>
+<ul>
+	 <li class="time">  
+			<img src="#">
+			<h4> 30 min </h4> <!--maybe a ACF field-->		 
+	</li>
+	<li class="serves">  
+			<img src="#">
+			<h4>Serves 1 </h4> <!--maybe a ACF field-->		 
+	</li>
+	<li class="level">  
+			<img src="#">
+			<h4>Medium </h4> <!--maybe a ACF field-->		 
+	</li>
+</ul>
 </div>
+<!--end of time of the recepy-->
+
+<!--direction of the recepy-->
+<div>
+	<div class="header_direction">
+		<h2 class="bordered-title"><i class="os-icon os-icon-thin-paper-list"></i> <span>Directions</span></h2>
+	</div>
+<p>The beauty of this recipe is that you can vary the 
+	flavour combos; herbs work really well, or you can 
+	try things like olives, sun-dried tomatoes, chilli
+	 or lemon zest. You can make it up to a month in 
+	 advance so it’s one less thing to do on the big day, 
+	 and keep the leftovers in the freezer so you have
+		an instant flavour injection at your fingertips.
+		 You can use it with anything from fish to chicken,
+		  roast lamb, roast potatoes or bread – delicious!
+
+Add the garlic, chilli, rosemary and anchovies to a
+ food processor and whiz until fairly fine. Dice and
+  add the cold butter, then whiz again until well combined. </p><!--this is a ACF field-->
+</div>
+<!--end of direction of the recepy-->
+
+
 
 
 	</div><!-- .entry-content -->

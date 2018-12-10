@@ -30,6 +30,13 @@
 		line-height: 1em;
 	}
 	.second {
-		width: 20%;
+		position: relative;
+		width: 23%;
+	}
+
+	img.second {
+		position: absolute;
+		top: 1.5rem;
+		right: 0rem;
 	}
 }
