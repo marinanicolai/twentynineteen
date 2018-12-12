@@ -66,35 +66,29 @@
 
 </ul>
 	</div>
-<div class="second">
+<div class="cuisine">
 <span>cuisine:</span>
 <img src="<?php bloginfo('template_directory'); ?>/img/france.svg">
 	</div>
 </div><!-- end of recepy feature -->
 
 <!--time of the recepy-->
-<div>
+<div class="single-meta">
 <ul>
-	 <li class="time">  
-			<img src="#">
-			<h4> 30 min </h4> <!--maybe a ACF field-->		 
-	</li>
-	<li class="serves">  
-			<img src="#">
-			<h4>Serves 1 </h4> <!--maybe a ACF field-->		 
-	</li>
-	<li class="level">  
-			<img src="#">
-			<h4>Medium </h4> <!--maybe a ACF field-->		 
-	</li>
+			<li class="single-meta-cooking-time"><i class="os-icon os-icon-thin-clock-busy"></i> <span>30 min</span></li> <!--maybe a ACF field-->	  
+			<li class="single-meta-serves"><i class="os-icon os-icon-thin-serve"></i> <span>Serves 4</span></li>  <!--maybe a ACF field-->
+  
+			<li class="single-meta-difficulty"><i class="os-icon os-icon-thin-cook"></i> <span>Easy</span></li>  <!--maybe a ACF field-->		 
+	
 </ul>
 </div>
 <!--end of time of the recepy-->
 
 <!--direction of the recepy-->
-<div>
+<div class="direction">
 	<div class="header_direction">
-		<h2 class="bordered-title"><i class="os-icon os-icon-thin-paper-list"></i> <span>Directions</span></h2>
+		<i class="os-icon os-icon-thin-paper-list"></i> 
+		<span class="bordered-title">Directions</span>
 	</div>
 <p>The beauty of this recipe is that you can vary the 
 	flavour combos; herbs work really well, or you can 

@@ -28,16 +28,12 @@ textarea {
 
 @font-face {
 	font-family: "osfont";
-	src: url("fonts/osfont.eot?z52hks23");
-	src: url("fonts/osfont.eot?#iefixz52hks23") format("embedded-opentype"),
-		url("http://neptune.pinsupreme.com/wp-content/themes/neptune-by-osetin/assets/fonts/osfont/osfont.woff2?z52hks23")
-			format("woff2"),
-		url("http://neptune.pinsupreme.com/wp-content/themes/neptune-by-osetin/assets/fonts/osfont/osfont.ttf?z52hks23")
-			format("truetype"),
-		url("http://neptune.pinsupreme.com/wp-content/themes/neptune-by-osetin/assets/fonts/osfont/osfont.woff?z52hks23")
-			format("woff"),
-		url("http://neptune.pinsupreme.com/wp-content/themes/neptune-by-osetin/assets/fonts/osfont/osfont.svg?z52hks23#osfont")
-			format("svg");
+	src: url("fonts/osfont.eot");
+	src: url("fonts/osfont.eot") format("embedded-opentype"),
+		url("fonts/osfont.woff2") format("woff2"),
+		url("fonts/osfont.ttf") format("truetype"),
+		url("fonts/osfont.woff") format("woff"),
+		url("fonts/osfont.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }

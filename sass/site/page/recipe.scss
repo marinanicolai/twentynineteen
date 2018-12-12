@@ -29,14 +29,44 @@
 		width: 50%;
 		line-height: 1em;
 	}
-	.second {
+	.cuisine {
 		position: relative;
 		width: 23%;
+		img {
+			// e bine uneori sa te uiti ce se compileaza n style.css
+			position: absolute;
+			top: 1.5rem;
+			right: 0rem;
+		}
 	}
+}
 
-	img.second {
-		position: absolute;
-		top: 1.5rem;
-		right: 0rem;
+.single-meta {
+	background-color: #ecf6f6;
+	padding: 10px 0px;
+	margin-bottom: 60px;
+	border-radius: 6px;
+	width: 17em;
+	ul {
+		width: 17em;
+		list-style-type: none;
+		display: inline-flex;
+		justify-content: space-between;
+		li {
+			padding-right: 1em;
+			display: inline-block;
+			border-right: 1px solid rgba(0, 0, 0, 0.1);
+		}
+		.single-meta-difficulty {
+			border-right: none;
+		}
+	}
+}
+
+.direction {
+	span.bordered-title {
+		border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+		padding-bottom: 5px;
+		display: inline-block;
 	}
 }
