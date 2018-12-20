@@ -75,10 +75,26 @@
 <!--time of the recepy-->
 <div class="single-meta">
 <ul>
-			<li class="single-meta-cooking-time"><i class="os-icon os-icon-thin-clock-busy"></i> <span>30 min</span></li> <!--maybe a ACF field-->	  
-			<li class="single-meta-serves"><i class="os-icon os-icon-thin-serve"></i> <span>Serves 4</span></li>  <!--maybe a ACF field-->
+			<li class="single-meta-cooking-time">
+					 <i class="os-icon os-icon-thin-clock-busy"></i>
+								<span>
+									<?php the_field('time_to_cook'); ?> min
+								</span>
+			</li> 	 
+			 
+			<li class="single-meta-serves">
+					<i class="os-icon os-icon-thin-serve"></i>
+					      <span>
+                  Serves <?php the_field('server'); ?>
+								</span>
+			</li>
   
-			<li class="single-meta-difficulty"><i class="os-icon os-icon-thin-cook"></i> <span>Easy</span></li>  <!--maybe a ACF field-->		 
+			<li class="single-meta-difficulty">
+				<i class="os-icon os-icon-thin-cook"></i>
+				   <span>
+						 <?php the_field('level'); ?>
+						</span>
+			</li>  <!--maybe a ACF field-->		 
 	
 </ul>
 </div>
@@ -90,26 +106,11 @@
 		<i class="os-icon os-icon-thin-paper-list"></i> 
 		<span class="bordered-title">Directions</span>
 	</div>
-<p>The beauty of this recipe is that you can vary the 
-	flavour combos; herbs work really well, or you can 
-	try things like olives, sun-dried tomatoes, chilli
-	 or lemon zest. You can make it up to a month in 
-	 advance so it’s one less thing to do on the big day, 
-	 and keep the leftovers in the freezer so you have
-		an instant flavour injection at your fingertips.
-		 You can use it with anything from fish to chicken,
-		  roast lamb, roast potatoes or bread – delicious!
-
-Add the garlic, chilli, rosemary and anchovies to a
- food processor and whiz until fairly fine. Dice and
-  add the cold butter, then whiz again until well combined. </p><!--this is a ACF field-->
+	<?php the_field('directions'); ?>
+<!--this is a ACF field-->
 </div>
 <!--end of direction of the recepy-->
-
-
-
-
-	</div><!-- .entry-content -->
+</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>
