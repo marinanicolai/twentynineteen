@@ -1,4 +1,14 @@
+ul.main {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	li {
+		width: 50%;
+	}
+}
+
 .recipe-features {
+	width: 50%;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;

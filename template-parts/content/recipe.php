@@ -51,11 +51,17 @@
 			)
 		);
 		?>
+<ul class="main">	
+	<li class="recipe_ingredients">	
+this is  a recipe ingridient fild	
 
-	<p><?php the_field('recipe_instructions'); ?></p>
+thi
+
+</li>	
 
 
-	
+<li class="recipe_instructions"
+	<p><?php the_field('recipe_instructions'); ?></p>	
 <div class="recipe-features">
 	<div class="first">
 <span id="features"> features:</span>
@@ -85,7 +91,7 @@
 			<li class="single-meta-serves">
 					<i class="os-icon os-icon-thin-serve"></i>
 					      <span>
-                  Serves <?php the_field('server'); ?>
+                  Serves <?php the_field('serves'); ?>
 								</span>
 			</li>
   
@@ -94,9 +100,9 @@
 				   <span>
 						 <?php the_field('level'); ?>
 						</span>
-			</li>  <!--maybe a ACF field-->		 
+			</li>  
 	
-</ul>
+   </ul>
 </div>
 <!--end of time of the recepy-->
 
@@ -111,6 +117,8 @@
 </div>
 <!--end of direction of the recepy-->
 </div><!-- .entry-content -->
+	</li>
+	</ul>
 
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>

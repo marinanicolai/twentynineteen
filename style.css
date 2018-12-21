@@ -4012,7 +4012,18 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Recipe page
 --------------------------------------------------------------*/
+ul.main {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+ul.main li {
+  width: 50%;
+}
+
 .recipe-features {
+  width: 50%;
   display: flex;
   justify-content: space-between;
   width: 100%;
