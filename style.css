@@ -4016,13 +4016,19 @@ ul.main {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
+  list-style-type: none;
 }
 
 ul.main li {
   width: 50%;
 }
 
+ul.main li.recipe_name {
+  width: 17em;
+}
+
 .recipe-features {
+  width: 16rem;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -4032,7 +4038,7 @@ ul.main li {
 }
 
 .recipe-features ul {
-  width: 10em;
+  width: 8em;
   float: right;
 }
 
@@ -4042,7 +4048,7 @@ ul.main li {
 }
 
 .recipe-features img {
-  max-width: 50px;
+  max-width: 1.5em;
 }
 
 .recipe-features span {
@@ -4050,7 +4056,7 @@ ul.main li {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .recipe-features span#features {
@@ -4062,15 +4068,30 @@ ul.main li {
   line-height: 1em;
 }
 
-.recipe-features .cuisine {
-  position: relative;
-  width: 23%;
+.recipe-features .first img {
+  width: 1em;
 }
 
-.recipe-features .cuisine img {
+.recipe-features .cuisine {
+  position: relative;
+  width: 31%;
+}
+
+.recipe-features .cuisine span#cuisine {
+  height: 2.3em;
+  padding-top: 0.7em;
+}
+
+.recipe-features .cuisine .photo {
+  position: relative;
+  height: 1.2em;
+}
+
+.recipe-features .cuisine .photo img {
   position: absolute;
-  top: 1.5rem;
-  right: 0rem;
+  height: 1.2em;
+  top: 0rem;
+  right: 2rem;
 }
 
 .single-meta {
@@ -4078,11 +4099,12 @@ ul.main li {
   padding: 10px 0px;
   margin-bottom: 60px;
   border-radius: 6px;
-  width: 17em;
+  font-size: medium;
+  width: 23em;
 }
 
 .single-meta ul {
-  width: 17em;
+  width: 100%;
   list-style-type: none;
   display: inline-flex;
   justify-content: space-between;

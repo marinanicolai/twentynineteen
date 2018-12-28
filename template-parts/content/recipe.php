@@ -53,15 +53,12 @@
 		?>
 <ul class="main">	
 	<li class="recipe_ingredients">	
-this is  a recipe ingridient fild	
+this is  a recipe ingridient field
+  </li>	
 
-thi
+<li class="recipe_name">
+	<p><?php the_field('recipe_name'); ?></p>	
 
-</li>	
-
-
-<li class="recipe_instructions"
-	<p><?php the_field('recipe_instructions'); ?></p>	
 <div class="recipe-features">
 	<div class="first">
 <span id="features"> features:</span>
@@ -69,13 +66,16 @@ thi
    <li><img src="<?php bloginfo('template_directory'); ?>/img/grain.svg"></li>
 	 <li><img src="<?php bloginfo('template_directory'); ?>/img/chili.svg"></li>
 	 <li><img src="<?php bloginfo('template_directory'); ?>/img/salad-1.svg"></li> 
-
 </ul>
-	</div>
+	</div> <!-- end of first -->
+
 <div class="cuisine">
-<span>cuisine:</span>
+<span id="cuisine">cuisine:</span>
+<div class="photo">
 <img src="<?php bloginfo('template_directory'); ?>/img/france.svg">
-	</div>
+  </div>
+	</div> <!--end of cuisine--> 
+
 </div><!-- end of recepy feature -->
 
 <!--time of the recepy-->
@@ -116,6 +116,7 @@ thi
 <!--this is a ACF field-->
 </div>
 <!--end of direction of the recepy-->
+
 </div><!-- .entry-content -->
 	</li>
 	</ul>

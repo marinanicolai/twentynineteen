@@ -1949,17 +1949,6 @@ body.page .main-navigation {
   /* Nested sub-menu dashes */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -1972,21 +1961,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
     display: block;
     margin-top: 0;
@@ -2026,13 +2000,6 @@ body.page .main-navigation {
   position: absolute;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -2047,22 +2014,12 @@ body.page .main-navigation {
     display: block;
     width: max-content;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
     display: block;
     width: max-content;
   }
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
@@ -2083,16 +2040,6 @@ body.page .main-navigation {
   /* Non-mobile position */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
@@ -2108,10 +2055,6 @@ body.page .main-navigation {
     float: none;
     max-width: 100%;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
@@ -2122,19 +2065,8 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
@@ -4078,13 +4010,19 @@ ul.main {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
+  list-style-type: none;
 }
 
 ul.main li {
   width: 50%;
 }
 
+ul.main li.recipe_name {
+  width: 17em;
+}
+
 .recipe-features {
+  width: 16rem;
   width: 50%;
   display: flex;
   justify-content: space-between;
@@ -4094,7 +4032,7 @@ ul.main li {
 }
 
 .recipe-features ul {
-  width: 10em;
+  width: 8em;
   float: left;
 }
 
@@ -4104,7 +4042,7 @@ ul.main li {
 }
 
 .recipe-features img {
-  max-width: 50px;
+  max-width: 1.5em;
 }
 
 .recipe-features span {
@@ -4112,7 +4050,7 @@ ul.main li {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .recipe-features span#features {
@@ -4124,15 +4062,30 @@ ul.main li {
   line-height: 1em;
 }
 
-.recipe-features .cuisine {
-  position: relative;
-  width: 23%;
+.recipe-features .first img {
+  width: 1em;
 }
 
-.recipe-features .cuisine img {
+.recipe-features .cuisine {
+  position: relative;
+  width: 31%;
+}
+
+.recipe-features .cuisine span#cuisine {
+  height: 2.5em;
+  padding-top: 0.7em;
+}
+
+.recipe-features .cuisine .photo {
+  position: relative;
+  height: 1.2em;
+}
+
+.recipe-features .cuisine .photo img {
   position: absolute;
-  top: 1.5rem;
-  left: 0rem;
+  height: 1.2em;
+  top: 0rem;
+  left: 2rem;
 }
 
 .single-meta {
@@ -4140,11 +4093,12 @@ ul.main li {
   padding: 10px 0px;
   margin-bottom: 60px;
   border-radius: 6px;
-  width: 17em;
+  font-size: medium;
+  width: 23em;
 }
 
 .single-meta ul {
-  width: 17em;
+  width: 100%;
   list-style-type: none;
   display: inline-flex;
   justify-content: space-between;
