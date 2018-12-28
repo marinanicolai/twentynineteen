@@ -4006,18 +4006,18 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Recipe page
 --------------------------------------------------------------*/
-ul.main {
+.main {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
-  list-style-type: none;
 }
 
-ul.main li {
+.main .left,
+.main .right {
   width: 50%;
 }
 
-ul.main li.recipe_name {
+.main .right {
   width: 17em;
 }
 
@@ -4072,7 +4072,7 @@ ul.main li.recipe_name {
 }
 
 .recipe-features .cuisine span#cuisine {
-  height: 2.5em;
+  height: 2.3em;
   padding-top: 0.7em;
 }
 

@@ -51,12 +51,12 @@
 			)
 		);
 		?>
-<ul class="main">	
-	<li class="recipe_ingredients">	
-this is  a recipe ingridient field
-  </li>	
+<div class="main">	
+	<div class="left">	
+           this is  a recipe ingridient field
+  </div>	<!--end of felt-->
 
-<li class="recipe_name">
+<div class="right">
 	<p><?php the_field('recipe_name'); ?></p>	
 
 <div class="recipe-features">
@@ -118,8 +118,8 @@ this is  a recipe ingridient field
 <!--end of direction of the recepy-->
 
 </div><!-- .entry-content -->
-	</li>
-	</ul>
+	</div>
+	</div>
 
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>

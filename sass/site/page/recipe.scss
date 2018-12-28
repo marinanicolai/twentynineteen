@@ -1,17 +1,19 @@
-ul.main {
+.main {
 	display: flex;
 	justify-content: space-around;
 	align-content: space-around;
-	list-style-type: none;
-	li {
+
+	.left,
+	.right {
 		width: 50%;
 	}
-	li.recipe_name {
+	.right {
 		width: 17em;
 	}
 }
 
 .recipe-features {
+	height: 4.5rem;
 	width: 16rem;
 	width: 50%;
 	display: flex;

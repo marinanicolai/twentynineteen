@@ -4012,22 +4012,23 @@ body.page .main-navigation {
 /*--------------------------------------------------------------
 ## Recipe page
 --------------------------------------------------------------*/
-ul.main {
+.main {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
-  list-style-type: none;
 }
 
-ul.main li {
+.main .left,
+.main .right {
   width: 50%;
 }
 
-ul.main li.recipe_name {
+.main .right {
   width: 17em;
 }
 
 .recipe-features {
+  height: 4.5rem;
   width: 16rem;
   width: 50%;
   display: flex;
