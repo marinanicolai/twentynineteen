@@ -53,8 +53,28 @@
 		?>
 <div class="main">	
 	<div class="left">	
-           this is  a recipe ingridient field
-  </div>	<!--end of felt-->
+					<div class="ingredience">
+							<h3><i class="os-icon os-icon-thin-paper-holes-text"></i>  Ingredients </h3>
+							  <div class="ingredient-serves">
+                    
+										</div><!-- end of ingredient-serves -->
+										<div class="single_ingridient">
+											<i class="os-icon os-icon-circle-o"></i>
+										  <?php if( have_rows('single_ingridient') ): ?> 
+    <ul> 
+        <?php while( have_rows('single_ingridient') ): the_row(); ?> 
+        <li>sub_field_1 = <?php the_sub_field('ingridient'); ?></li> 
+      <?php endwhile; ?> 
+    </ul> 
+<?php endif; ?><!--ACF field-->
+	                  </div>
+                  </div><!--end of ingredience-->
+
+					</div><!--end of left-->
+	
+
+
+  
 
 <div class="right">
 	<p><?php the_field('recipe_name'); ?></p>	
