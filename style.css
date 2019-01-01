@@ -4027,6 +4027,32 @@ body.page .main-navigation {
   width: 17em;
 }
 
+.left {
+  padding: 1em;
+}
+
+.left .ingredience {
+  background-color: #faf5f1;
+  border-radius: 6px;
+  padding: 0.5em;
+}
+
+.left .ingredience .single_ingridient ul {
+  list-style: none;
+  padding-right: 1em;
+}
+
+.left .ingredience .single_ingridient ul li {
+  border-bottom-style: solid;
+  border-color: #efe0d3;
+}
+
+.left .ingredience .single_ingridient ul li i {
+  border-right: #efe0d3;
+  border-right-style: solid;
+  padding: 0.5em;
+}
+
 .recipe-features {
   height: 4.5rem;
   width: 16rem;

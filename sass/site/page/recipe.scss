@@ -12,6 +12,30 @@
 	}
 }
 
+.left {
+	padding: 1em;
+	.ingredience {
+		background-color: #faf5f1;
+		border-radius: 6px;
+		padding: 0.5em;
+		.single_ingridient {
+			ul {
+				list-style: none;
+				padding-right: 1em;
+				li {
+					border-bottom-style: solid;
+					border-color: #efe0d3;
+					i {
+						border-right: #efe0d3;
+						border-right-style: solid;
+						padding: 0.5em;
+					}
+				}
+			}
+		}
+	}
+}
+
 .recipe-features {
 	height: 4.5rem;
 	width: 16rem;

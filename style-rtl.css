@@ -4021,7 +4021,24 @@ body.page .main-navigation {
   width: 17em;
 }
 
+.single_ingridient ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.single_ingridient ul li {
+  border-bottom-style: solid;
+  border-color: #efe0d3;
+}
+
+.single_ingridient ul li i {
+  border-left: #efe0d3;
+  border-left-style: solid;
+  padding: 0.5em;
+}
+
 .recipe-features {
+  height: 4.5rem;
   width: 16rem;
   width: 50%;
   display: flex;
