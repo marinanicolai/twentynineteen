@@ -18,7 +18,7 @@
 		background-color: #faf5f1;
 		border-radius: 6px;
 		padding: 0.5em;
-		.single_ingridient {
+		.single_ingredient {
 			ul {
 				list-style: none;
 				padding-right: 1em;
@@ -31,6 +31,18 @@
 						padding: 0.5em;
 					}
 				}
+			}
+		}
+	}
+	.nutritional_information {
+		ul {
+			list-style: none;
+			text-align: center;
+			li {
+				width: 3em;
+				padding: 0;
+				margin: 0;
+				display: inline-block;
 			}
 		}
 	}

@@ -56,7 +56,7 @@
 		<div class="ingredient">
 			<h3><i class="os-icon os-icon-thin-paper-holes-text"></i>  Ingredients </h3>
 				<div class="ingredient-serves"></div>
-				<div class="single_ingridient">
+				<div class="single_ingredient">
 						<?php if( have_rows('ingredients') ): ?> 
     					<ul> 
         				<?php while( have_rows('ingredients') ): the_row(); ?> 
@@ -69,6 +69,37 @@
 						<?php endif; ?><!--ACF field-->
 	        </div>
 				</div><!--end of ingredience-->
+				<div class="nutritional">
+					<h3><i class="os-icon os-icon-thin-info"></i> nutritional information </h3>
+					  <div class="nutritional_information">
+				    	<ul>
+									<li> 
+											<?php the_field('fat_amount_'); ?>g 
+												 <span class="info"> fat</span>
+									</li>
+									<li> 
+											 <?php the_field('protein_amount'); ?>g 
+													<span class="info"> protein</span>
+									</li>
+									<li>
+												<?php the_field('carbs_amount'); ?>g
+														<span class="info"> carbs</span>
+									</li>
+									<li> 
+											 <?php the_field('calories_amount'); ?>
+														 <span class="info"> calories</span>
+									</li>
+									<li> 
+											 <?php the_field('sugar_amount'); ?>g
+														 <span class="info"> sugars</span>
+									</li>
+									<li> 
+											 <?php the_field('trans_fat_amount'); ?>g 
+														 <span class="info">trans fat</span>
+									</li>
+			      	</ul> 
+	         </div><!--end of nutritional information-->
+				</div>
 			</div><!--end of left-->
 
 <div class="right">

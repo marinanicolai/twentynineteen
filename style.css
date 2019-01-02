@@ -4031,26 +4031,38 @@ body.page .main-navigation {
   padding: 1em;
 }
 
-.left .ingredience {
+.left .ingredient {
   background-color: #faf5f1;
   border-radius: 6px;
   padding: 0.5em;
 }
 
-.left .ingredience .single_ingridient ul {
+.left .ingredient .single_ingredient ul {
   list-style: none;
   padding-right: 1em;
 }
 
-.left .ingredience .single_ingridient ul li {
+.left .ingredient .single_ingredient ul li {
   border-bottom-style: solid;
   border-color: #efe0d3;
 }
 
-.left .ingredience .single_ingridient ul li i {
+.left .ingredient .single_ingredient ul li i {
   border-right: #efe0d3;
   border-right-style: solid;
   padding: 0.5em;
+}
+
+.left .nutritional_information ul {
+  list-style: none;
+  text-align: center;
+}
+
+.left .nutritional_information ul li {
+  width: 3em;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .recipe-features {
