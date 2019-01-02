@@ -53,7 +53,7 @@
 		?>
 <div class="main">	
 	<div class="left">	
-		<div class="ingredience">
+		<div class="ingredient">
 			<h3><i class="os-icon os-icon-thin-paper-holes-text"></i>  Ingredients </h3>
 				<div class="ingredient-serves"></div>
 				<div class="single_ingridient">
