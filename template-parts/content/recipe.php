@@ -74,7 +74,9 @@
 					  <div class="nutritional_information">
 				    	<ul>
 									<li> 
+										  <div class="amount">
 											<?php the_field('fat_amount_'); ?>g 
+                    	</div>
 												 <span class="info"> fat</span>
 									</li>
 									<li> 
