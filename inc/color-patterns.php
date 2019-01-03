@@ -68,7 +68,6 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color,
 		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-primary-background-color,
 		.entry .entry-content .wp-block-file .wp-block-file__button {
-			background-color: hsl( ' . $primary_color . ', ' . $saturation . ', ' . $lightness . ' ); /* base: #0073a8; */
 		}
 
 		/*

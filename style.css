@@ -1398,22 +1398,22 @@ html[lang="sah"] .site *,
 html[lang="sr-RS"] .site *,
 html[lang="tt-RU"] .site *,
 html[lang="uk"] .site * {
-  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif !important;
 }
 
 /* Chinese (Hong Kong) */
 html[lang="zh-HK"] .site * {
-  font-family: -apple-system, BlinkMacSystemFont, 'PingFang HK', 'Helvetica Neue', "Microsoft YaHei New", STHeiti Light, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang HK", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif !important;
 }
 
 /* Chinese (Taiwan) */
 html[lang="zh-TW"] .site * {
-  font-family: -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Helvetica Neue', "Microsoft YaHei New", STHeiti Light, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif !important;
 }
 
 /* Chinese (China) */
 html[lang="zh-CN"] .site * {
-  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', "Microsoft YaHei New", STHeiti Light, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei New", STHeiti Light, sans-serif !important;
 }
 
 /* Devanagari */
@@ -1426,7 +1426,7 @@ html[lang="ne-NP"] .site * {
 
 /* Greek */
 html[lang="el"] .site * {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
 /* Gujarati */
@@ -1436,7 +1436,7 @@ html[lang="gu"] .site * {
 
 /* Hebrew */
 html[lang="he-IL"] .site * {
-  font-family: 'Arial Hebrew', Arial, sans-serif !important;
+  font-family: "Arial Hebrew", Arial, sans-serif !important;
 }
 
 /* Japanese */
@@ -1446,17 +1446,17 @@ html[lang="ja"] .site * {
 
 /* Korean */
 html[lang="ko-KR"] .site * {
-  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', 'Nanum Gothic', Dotum, sans-serif !important;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif !important;
 }
 
 /* Thai */
 html[lang="th"] .site * {
-  font-family: 'Sukhumvit Set', 'Helvetica Neue', helvetica, arial, sans-serif !important;
+  font-family: "Sukhumvit Set", "Helvetica Neue", helvetica, arial, sans-serif !important;
 }
 
 /* Vietnamese */
 html[lang="vi"] .site * {
-  font-family: 'Libre Franklin', sans-serif !important;
+  font-family: "Libre Franklin", sans-serif !important;
 }
 
 /* Elements */
@@ -2363,7 +2363,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .post-navigation {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1rem) calc(1% + 10px);
     max-width: calc(6 * (100vw / 12));
   }
 }
@@ -2391,7 +2391,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .post-navigation .nav-links {
     flex-direction: row;
-    margin: 0 calc(10% + 60px);
+    margin: 0 calc(1% + 10px);
     max-width: calc(6 * (100vw / 12) - 28px);
   }
 }
@@ -2497,7 +2497,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .pagination .nav-links {
-    margin-left: calc(10% + 60px);
+    margin-left: calc(1% + 10px);
     padding: 0;
   }
   .pagination .nav-links .prev > *,
@@ -2700,7 +2700,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-branding {
-    margin: 0 calc(10% + 60px);
+    margin: 0 calc(1% + 10px);
   }
 }
 
@@ -2815,11 +2815,6 @@ body.page .main-navigation {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* The intensity of each blend mode is controlled via layer opacity. */
-  /* Second layer: screen. */
-  /* Third layer: multiply. */
-  /* When image filters are inactive, a black overlay is added. */
-  /* Fourth layer: overlay. */
   /* Fifth layer: readability overlay */
 }
 
@@ -2926,7 +2921,7 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header {
-  margin-top: calc( 4 * 1rem);
+  margin-top: calc(4 * 1rem);
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -2935,8 +2930,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-featured-image .entry-header {
-    margin-left: calc(10% + 60px);
-    margin-right: calc(10% + 60px);
+    margin-left: calc(1% + 10px);
+    margin-right: calc(1% + 10px);
   }
 }
 
@@ -3027,46 +3022,6 @@ body.page .main-navigation {
   height: 100%;
 }
 
-.image-filters-enabled .site-header.featured-image .site-featured-image:before {
-  background: green;
-  mix-blend-mode: screen;
-  opacity: 0.1;
-}
-
-.site-header.featured-image .site-featured-image:after {
-  background: #000;
-  mix-blend-mode: multiply;
-  opacity: .7;
-  /* When image filters are active, a blue overlay is added. */
-}
-
-.image-filters-enabled .site-header.featured-image .site-featured-image:after {
-  background: green;
-  opacity: .8;
-  z-index: 3;
-  /* Browsers supporting mix-blend-mode don't need opacity < 1 */
-}
-
-@supports (mix-blend-mode: multiply) {
-  .image-filters-enabled .site-header.featured-image .site-featured-image:after {
-    opacity: 1;
-  }
-}
-
-.image-filters-enabled .site-header.featured-image .site-branding-container:after {
-  background: rgba(0, 0, 0, 0.35);
-  mix-blend-mode: overlay;
-  opacity: 0.5;
-  z-index: 4;
-  /* Browsers supporting mix-blend-mode can have a light overlay */
-}
-
-@supports (mix-blend-mode: overlay) {
-  .image-filters-enabled .site-header.featured-image .site-branding-container:after {
-    background: rgba(255, 255, 255, 0.35);
-  }
-}
-
 .site-header.featured-image:after {
   background: #000;
   /**
@@ -3111,7 +3066,7 @@ body.page .main-navigation {
   display: inline-block;
   font-weight: bold;
   line-height: 1;
-  padding: .25rem;
+  padding: 0.25rem;
   position: absolute;
   text-transform: uppercase;
   top: -1rem;
@@ -3128,11 +3083,7 @@ body.page .main-navigation {
 }
 
 .entry {
-  margin-top: calc(6 * 1rem);
-}
-
-.entry:first-of-type {
-  margin-top: 0;
+  margin-bottom: calc(1 * 1rem);
 }
 
 .entry .entry-header {
@@ -3142,7 +3093,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) 1rem;
+    margin: calc(3 * 1rem) calc(1% + 10px) 1rem;
   }
 }
 
@@ -3209,12 +3160,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-footer {
+  display: none;
   margin: calc(2 * 1rem) 1rem 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-footer {
-    margin: 1rem calc(10% + 60px) calc(3 * 1rem);
+    margin: 1rem calc(1% + 10px) calc(3 * 1rem);
     max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
@@ -3227,11 +3179,12 @@ body.page .main-navigation {
 
 .entry .post-thumbnail {
   margin: 1rem;
+  margin-top: 0 !important;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .post-thumbnail {
-    margin: 1rem calc(10% + 60px);
+    margin: 1rem calc(1% + 10px);
   }
 }
 
@@ -3254,16 +3207,12 @@ body.page .main-navigation {
   display: block;
 }
 
-.image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner {
-  filter: grayscale(100%);
-}
-
 .image-filters-enabled .entry .post-thumbnail .post-thumbnail-inner:after {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.7);
   content: "";
   display: block;
   height: 100%;
-  opacity: .5;
+  opacity: 0.5;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -3289,24 +3238,8 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .entry .post-thumbnail:before {
-  background: green;
-  mix-blend-mode: screen;
-  opacity: 0.1;
-  z-index: 2;
-}
-
-.image-filters-enabled .entry .post-thumbnail:after {
-  background: green;
-  mix-blend-mode: multiply;
-  opacity: .8;
-  z-index: 3;
-  /* Browsers supporting mix-blend-mode don't need opacity < 1 */
-}
-
-@supports (mix-blend-mode: multiply) {
-  .image-filters-enabled .entry .post-thumbnail:after {
-    opacity: 1;
-  }
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
 }
 
 .entry .entry-content,
@@ -3419,13 +3352,13 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .author-bio {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1rem) calc(1% + 10px);
   }
 }
 
 @media only screen and (min-width: 1168px) {
   .author-bio {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1rem) calc(1% + 10px);
   }
 }
 
@@ -3456,6 +3389,29 @@ body.page .main-navigation {
 .author-bio .author-description .author-link:hover {
   color: #004d00;
   text-decoration: none;
+}
+
+.home .site-main {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 1em;
+}
+
+.home .site-main article {
+  position: relative;
+}
+
+.home .site-main article .entry-content {
+  display: none;
+}
+
+.home .site-main article header {
+  position: absolute;
+  color: white;
+  z-index: 99;
 }
 
 /*--------------------------------------------------------------
@@ -3490,7 +3446,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .comments-area {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1rem) calc(1% + 10px);
   }
 }
 
@@ -3884,7 +3840,7 @@ body.page .main-navigation {
   .archive .page-header,
   .search .page-header,
   .error404 .page-header {
-    margin: 0 calc(10% + 60px) calc(10% + 60px);
+    margin: 0 calc(1% + 10px) calc(1% + 10px);
   }
 }
 
@@ -3931,7 +3887,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .hfeed .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    margin: calc(3 * 1rem) calc(1% + 10px) calc(1rem / 2);
   }
 }
 
@@ -3944,7 +3900,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .error-404.not-found .page-content,
   .no-results.not-found .page-content {
-    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    margin: calc(3 * 1rem) calc(1% + 10px) calc(1rem / 2);
   }
 }
 
@@ -3971,7 +3927,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   #colophon .widget-area,
   #colophon .site-info {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1rem) calc(1% + 10px);
   }
 }
 
@@ -4069,7 +4025,7 @@ body.page .main-navigation {
   text-transform: capitalize;
   font-size: 0.9em;
   margin: 0;
-  padding: 0.5em 0 0 0.6em;
+  padding: 0.5em 0 0.9em 0.6em;
 }
 
 .nutritional .nutritional_information ul {

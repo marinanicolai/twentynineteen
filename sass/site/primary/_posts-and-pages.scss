@@ -8,7 +8,7 @@
 	display: inline-block;
 	font-weight: bold;
 	line-height: 1;
-	padding: .25rem;
+	padding: 0.25rem;
 	position: absolute;
 	text-transform: uppercase;
 	top: -$size__spacing-unit;
@@ -25,25 +25,20 @@
 }
 
 .entry {
-
-	margin-top: calc(6 * #{$size__spacing-unit});
-
-	&:first-of-type {
-		margin-top: 0;
-	}
+	margin-bottom: calc(1 * #{$size__spacing-unit});
 
 	.entry-header {
-
-		margin: calc(3 * #{ $size__spacing-unit}) $size__spacing-unit $size__spacing-unit;
+		margin: calc(3 * #{$size__spacing-unit}) $size__spacing-unit
+			$size__spacing-unit;
 		position: relative;
 
 		@include media(tablet) {
-			margin: calc(3 * #{ $size__spacing-unit}) $size__site-margins $size__spacing-unit;
+			margin: calc(3 * #{$size__spacing-unit}) $size__site-margins
+				$size__spacing-unit;
 		}
 	}
 
 	.entry-title {
-
 		@include post-section-dash;
 		margin: 0;
 
@@ -58,12 +53,10 @@
 
 	.entry-meta,
 	.entry-footer {
-
 		color: $color__text-light;
 		font-weight: 500;
 
 		> span {
-
 			margin-right: $size__spacing-unit;
 			display: inline-block;
 
@@ -73,7 +66,6 @@
 		}
 
 		a {
-
 			@include link-transition;
 			color: currentColor;
 
@@ -96,11 +88,13 @@
 	}
 
 	.entry-footer {
-
-		margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit $size__spacing-unit;
+		display: none;
+		margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit
+			$size__spacing-unit;
 
 		@include media(tablet) {
-			margin: $size__spacing-unit $size__site-margins calc(3 * #{$size__spacing-unit});
+			margin: $size__spacing-unit $size__site-margins
+				calc(3 * #{$size__spacing-unit});
 			max-width: $size__site-tablet-content;
 		}
 
@@ -110,8 +104,8 @@
 	}
 
 	.post-thumbnail {
-
 		margin: $size__spacing-unit;
+		margin-top: 0 !important;
 
 		@include media(tablet) {
 			margin: $size__spacing-unit $size__site-margins;
@@ -133,20 +127,17 @@
 	}
 
 	.image-filters-enabled & {
-
 		.post-thumbnail {
 			position: relative;
 			display: block;
 
 			.post-thumbnail-inner {
-				filter: grayscale(100%);
-
 				&:after {
-					background: rgba(0, 0, 0, 0.35);
+					background: rgba(0, 0, 0, 0.7);
 					content: "";
 					display: block;
 					height: 100%;
-					opacity: .5;
+					opacity: 0.5;
 					pointer-events: none;
 					position: absolute;
 					top: 0;
@@ -160,24 +151,26 @@
 			}
 
 			&:before,
-			&:after, {
+			&:after {
 				position: absolute;
 				display: block;
 				width: 100%;
 				height: 100%;
-				top: 0; left: 0;
+				top: 0;
+				left: 0;
 				content: "\020";
 				pointer-events: none;
 			}
-
-			@include filter-duotone;
-
+			&:before {
+				background: rgba(0, 0, 0, 0.6);
+				z-index: 9;
+			}
 		}
 	}
 
 	.entry-content,
 	.entry-summary {
-		max-width: calc(100% - (2 * #{ $size__spacing-unit }));
+		max-width: calc(100% - (2 * #{$size__spacing-unit}));
 		margin: 0 $size__spacing-unit;
 
 		@include media(tablet) {
@@ -188,7 +181,6 @@
 	}
 
 	.entry-content {
-
 		p {
 			word-wrap: break-word;
 		}
@@ -230,7 +222,6 @@
 
 		// Overwrite iframe embeds that have inline styles.
 		> iframe[style] {
-
 			margin: 32px 0 !important;
 			max-width: 100% !important;
 
@@ -251,7 +242,7 @@
 
 		// Classic editor audio embeds.
 		.wp-audio-shortcode {
-			max-width: calc(100vw - (2 * #{ $size__spacing-unit }));
+			max-width: calc(100vw - (2 * #{$size__spacing-unit}));
 
 			@include media(tablet) {
 				max-width: $size__site-tablet-content;
@@ -267,7 +258,8 @@
 /* Author description */
 
 .author-bio {
-	margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit $size__spacing-unit;
+	margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit
+		$size__spacing-unit;
 
 	@include postContentMaxWidth();
 
@@ -285,7 +277,6 @@
 	}
 
 	.author-description {
-
 		display: inline;
 		color: $color__text-light;
 		font-size: $font__size-md;
@@ -298,6 +289,26 @@
 				color: $color__link-hover;
 				text-decoration: none;
 			}
+		}
+	}
+}
+
+.home .site-main {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 3em;
+	-moz-column-gap: 3em;
+	column-gap: 1em;
+	article {
+		position: relative;
+		.entry-content {
+			display: none;
+		}
+		header {
+			position: absolute;
+			color: white;
+			z-index: 99;
 		}
 	}
 }

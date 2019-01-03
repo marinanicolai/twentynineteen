@@ -278,37 +278,18 @@ function twentynineteen_colors_css_wrap() {
 add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
 
 	
-/*
-* Define a constant path to our single template folder
-*/
-define(SINGLE_PATH, TEMPLATEPATH . '/single');
- 
-/**
-* Filter the single_template with our custom function
-*/
-add_filter('single_template', 'my_single_template');
- 
-/**
-* Single template function which will choose our template
-*/
-function my_single_template($single) {
-global $wp_query, $post;
- 
-/**
-* Checks for single template by category
-* Check by category slug and ID
-*/
-foreach((array)get_the_category() as $cat) :
- 
-if(file_exists(SINGLE_PATH . '/single-cat-' . $cat->slug . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->slug . '.php';
- 
-elseif(file_exists(SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php'))
-return SINGLE_PATH . '/single-cat-' . $cat->term_id . '.php';
- 
-endforeach;
-}
+add_filter( 'single_template', function ( $single_template ) {
 
+    $parent     = '2'; //Change to your category ID
+    $categories = get_categories( 'child_of=' . $parent );
+    $cat_names  = wp_list_pluck( $categories, 'name' );
+
+    if ( has_category( 'movies' ) || has_category( $cat_names ) ) {
+        $single_template = dirname( __FILE__ ) . '/single-recipe.php';
+    }
+    return $single_template;
+
+}, PHP_INT_MAX, 2 );
 
 /**
  * SVG Icons class.

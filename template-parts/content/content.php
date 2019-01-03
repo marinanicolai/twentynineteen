@@ -52,7 +52,6 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-<h1> this is the content.php </h1>
 	<footer class="entry-footer">
 		<?php twentynineteen_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

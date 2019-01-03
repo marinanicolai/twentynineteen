@@ -117,6 +117,8 @@
 <div class="right">
 	<p><?php the_field('recipe_name'); ?></p>	
 
+	<?php echo do_shortcode("[wp-reactivate]"); ?>
+
 <div class="recipe-features">
 	<div class="first">
 <span id="features"> features:</span>
@@ -174,6 +176,23 @@
 <!--this is a ACF field-->
 </div>
 <!--end of direction of the recepy-->
+
+<!-- steps of the recepy -->
+
+  <h3>Steps</h3>
+  <?php if( have_rows('steps') ): ?>
+	<?php while( have_rows('steps') ): the_row(); ?>
+		<div class="single_steps" id="single_steps-<?php echo get_row_index(); ?>">				
+			<?php echo get_row_index(); ?><span>.</span>
+			<?php the_sub_field('step'); ?>
+		</div>
+
+	<?php endwhile; ?>
+
+<?php endif; ?>
+</div>
+
+
 
 </div><!-- .entry-content -->
 	</div>
