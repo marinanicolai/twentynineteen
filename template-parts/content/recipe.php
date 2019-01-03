@@ -80,23 +80,33 @@
 												 <span class="info"> fat</span>
 									</li>
 									<li> 
+										   <div class="amount">
 											 <?php the_field('protein_amount'); ?>g 
+	                     </div>
 													<span class="info"> protein</span>
 									</li>
 									<li>
+										    <div class="amount">
 												<?php the_field('carbs_amount'); ?>g
+	                      </div>
 														<span class="info"> carbs</span>
 									</li>
 									<li> 
+										   <div class="amount">
 											 <?php the_field('calories_amount'); ?>
+	                     </div>
 														 <span class="info"> calories</span>
 									</li>
 									<li> 
+										   <div class="amount">
 											 <?php the_field('sugar_amount'); ?>g
+	                     </div>
 														 <span class="info"> sugars</span>
 									</li>
 									<li> 
+										   <div class="amount">
 											 <?php the_field('trans_fat_amount'); ?>g 
+	                     </div>
 														 <span class="info">trans fat</span>
 									</li>
 			      	</ul> 

@@ -4032,7 +4032,9 @@ body.page .main-navigation {
 }
 
 .left h3 {
-  padding: 0.8em;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 .ingredient {
@@ -4060,12 +4062,21 @@ body.page .main-navigation {
 .nutritional {
   background-color: #e5f3eb;
   border-radius: 6px;
-  margin-bottom: 40px;
+  margin-top: 2em;
+}
+
+.nutritional h3 {
+  text-transform: capitalize;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.5em 0 0 0.6em;
 }
 
 .nutritional .nutritional_information ul {
   list-style: none;
   text-align: center;
+  padding-bottom: 0.3em;
+  margin: 0;
 }
 
 .nutritional .nutritional_information ul li {
@@ -4080,6 +4091,11 @@ body.page .main-navigation {
 
 .nutritional .nutritional_information ul li .amount {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nutritional .nutritional_information ul li .info {
+  font-size: 0.5em;
+  text-transform: capitalize;
 }
 
 .recipe-features {

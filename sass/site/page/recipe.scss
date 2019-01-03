@@ -15,7 +15,9 @@
 .left {
 	padding: 1em;
 	h3 {
-		padding: 0.8em;
+		text-transform: capitalize;
+		font-size: 0.9em;
+		margin: 0;
 	}
 }
 
@@ -43,11 +45,19 @@
 .nutritional {
 	background-color: #e5f3eb;
 	border-radius: 6px;
-	margin-bottom: 40px;
+	margin-top: 2em;
+	h3 {
+		text-transform: capitalize;
+		font-size: 0.9em;
+		margin: 0;
+		padding: 0.5em 0 0 0.6em;
+	}
 	.nutritional_information {
 		ul {
 			list-style: none;
 			text-align: center;
+			padding-bottom: 0.3em;
+			margin: 0;
 			li {
 				width: 3em;
 				display: inline-block;
@@ -58,6 +68,10 @@
 				border-radius: 0.3em;
 				.amount {
 					border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				}
+				.info {
+					font-size: 0.5em;
+					text-transform: capitalize;
 				}
 			}
 		}

@@ -4025,40 +4025,54 @@ body.page .main-navigation {
   padding: 1em;
 }
 
-.left .ingredient {
+.left h3 {
+  text-transform: capitalize;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.ingredient {
   background-color: #faf5f1;
   border-radius: 6px;
   padding: 0.5em;
 }
 
-.left .ingredient .single_ingredient ul {
+.ingredient .single_ingredient ul {
   list-style: none;
   padding-left: 1em;
 }
 
-.left .ingredient .single_ingredient ul li {
+.ingredient .single_ingredient ul li {
   border-bottom-style: solid;
   border-color: #efe0d3;
 }
 
-.left .ingredient .single_ingredient ul li i {
+.ingredient .single_ingredient ul li i {
   border-left: #efe0d3;
   border-left-style: solid;
   padding: 0.5em;
 }
 
-.left .nutritional {
+.nutritional {
   background-color: #e5f3eb;
   border-radius: 6px;
-  margin-bottom: 40px;
+  margin-top: 2em;
 }
 
-.left .nutritional .nutritional_information ul {
+.nutritional h3 {
+  text-transform: capitalize;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.nutritional .nutritional_information ul {
   list-style: none;
   text-align: center;
+  padding-bottom: 0.3em;
+  margin: 0;
 }
 
-.left .nutritional .nutritional_information ul li {
+.nutritional .nutritional_information ul li {
   width: 3em;
   display: inline-block;
   width: 25%;
@@ -4068,8 +4082,13 @@ body.page .main-navigation {
   border-radius: 0.3em;
 }
 
-.left .nutritional h3 {
-  padding: 0.8em;
+.nutritional .nutritional_information ul li .amount {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nutritional .nutritional_information ul li .info {
+  font-size: 0.5em;
+  text-transform: capitalize;
 }
 
 .recipe-features {
